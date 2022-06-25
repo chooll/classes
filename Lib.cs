@@ -9,7 +9,7 @@ namespace app_test
             if (t != null) { 
                 result = (int)t; 
             }
-            return result
+            return result;
         }
 
         public static ArrayList SendRequest (string request) { 
@@ -22,6 +22,8 @@ namespace app_test
                     result.Add(rec); 
                 }
             }
+            rdr.Close(); 
+            return return;
         }
 
         public static void DigitTextBoxOnly(KeyPressEventArgs e) { 
